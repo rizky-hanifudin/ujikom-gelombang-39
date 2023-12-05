@@ -1,0 +1,19 @@
+Switch>enable
+Switch#
+Switch#configure terminal
+Switch(config)#vlan 10
+Switch(config-vlan)#name DIREKTUR
+Switch(config-vlan)#end
+
+
+Switch#configure terminal
+Switch(config)#vlan 20
+Switch(config-vlan)#name CUSTOMER_SERVICE
+Switch(config-vlan)#end
+
+show vlan
+
+Setting Akses
+Switch(config)#interface FastEthernet0/1
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport access vlan 10

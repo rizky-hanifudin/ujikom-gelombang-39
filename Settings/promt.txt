@@ -1,0 +1,40 @@
+Ip 192.168.10.2/24
+Gateway 192.168.10.1
+DNS 192.168.10.100
+
+ip address 192.168.10.1 255.255.255.0
+
+switchport port-security mac-address 0002.1727.9101
+switchport port-security mac-address 0002.1727.9102
+switchport port-security mac-address 0002.1727.9103
+switchport port-security mac-address 0002.1727.9104
+switchport port-security mac-address 0002.1727.9104
+swtchport port-security violation protect
+
+F0/1
+switchport mode access
+switchport port-security
+switchport port-security mac-address sticky
+
+switchport port-security mac-address 0001.C7DA.5756
+switchport port-security mac-address 000D.BD73.A741
+switchport port-security mac-address 00D0.587D.6B80
+
+switchport port-security max 3
+switchport port-security mac-address 00D0.587D.6B80
+switch port-security violation restrict
+
+
+F0/1
+switchport mode access
+switchport port-security
+switchport port-security max 4
+switchport port-security mac-address 0001.9796.8302
+switch port-security violation protect
+
+F0/1
+switchport mode access
+switchport port-security
+switchport port-security max 4
+switchport port-security mac-address 0001.9796.8303
+switch port-security violation shutdown

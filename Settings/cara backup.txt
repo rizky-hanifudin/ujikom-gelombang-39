@@ -1,0 +1,19 @@
+Cara Menyimpan Konfigurasi Cisco Packet Tracer.
+Router>en
+Router#copy running-config tftp
+192.150.150.150
+nama_file
+
+lihat config
+show running-config
+
+Cara Restore Konfigurasi Cisco Packet Tracer
+Router>en
+Router#copy flash: running-config
+Source filename [] ? BackupRouter
+
+Cara Menghapus Konfigurasi Cisco Packet Tracer 
+Untuk menghapus konfigurasi yang telah disimpan tadi perintahnya adalah :
+Jangkrik>en
+Jangkrik#erase startup-config
+
